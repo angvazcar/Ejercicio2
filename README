@@ -45,8 +45,8 @@ git clone https://github.com/tu_usuario/tu_repositorio.git
 * * Espera a que IntelliJ detecte y configure automáticamente el proyecto.
 
 3. Ejecutar el proyecto desde IntelliJ
-* * Abre la clase SearchMain.java ubicada en src/main/java
-* * Haz click derecho dentro del archivo y selecciona "Run 'SearchMain.main()"
+* * Abre la clase RunCucumberTest ubicada en src/main/test/java/test
+* * Haz click derecho dentro del archivo y selecciona "Run 'RunCucumberTest.main()"
 * * IntelliJ compilará el código y ejecutará la prueba en el navegador controlado por Selenium
 
 5. Ejecutar el proyecto por comandos
@@ -58,9 +58,9 @@ cd /ruta/del/proyecto
   ```
 mvn clean compile
   ```
-* * Ejecuta la clase SearchMain
+* * Ejecuta la clase RunCucumberTest
   ```
-mvn exec:java -Dexec.mainClass="tests.SearchMain"
+mvn clean test
   ```
 * * La prueba se ejecutará en el navegador y mostrará los resultados en el terminal
 

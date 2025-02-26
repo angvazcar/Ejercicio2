@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: test.RunCucumberTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 9.253 s <<< FAILURE! -- in test.RunCucumberTest
+Búsqueda en Google.Buscar el término "automatización" y acceder a Wikipedia -- Time elapsed: 9.149 s <<< ERROR!
+java.nio.file.FileAlreadyExistsException: screenshot.png
+	at java.base/sun.nio.fs.UnixCopyFile.copy(UnixCopyFile.java:573)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.copy(UnixFileSystemProvider.java:257)
+	at java.base/java.nio.file.Files.copy(Files.java:1305)
+	at test.BusquedaGoogleSteps.tomarCapturaDePantalla(BusquedaGoogleSteps.java:108)
+	at ✽.toma una captura de pantalla de la página de Wikipedia(file:///Users/angelesbuild38/Ejercicio2Cucumber%20ok/src/test/resources/features/busqueda_google.feature:9)
+

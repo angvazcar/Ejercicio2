@@ -6,7 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Ejercicio2Cucumber" />
+        <module name="Ejercicio2Cucumber ok" />
         <module name="Ejercicio2" />
+        <module name="Ejercicio2C" />
       </profile>
     </annotationProcessing>
   </component>
