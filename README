@@ -29,7 +29,7 @@ extrayendo el primer año mencionado en la página. También se toma una captura
    - Se usa WebDriverManager para automatizar la instalación de ChromeDriver y evitar pasos manuales.
 
 4. **Dependencias del Proyecto**:
-   - El proyecto utiliza Selenium y WebDriverManager. Hemos añadido la confitguración al archivo `pom.xml`.
+   - El proyecto utiliza Selenium y WebDriverManager. Hemos añadido la configuración al archivo `pom.xml`.
 
 ## Instalación y Configuración
 
@@ -37,7 +37,7 @@ extrayendo el primer año mencionado en la página. También se toma una captura
   ```
 git clone https://github.com/tu_usuario/tu_repositorio.git
   ```
-  Reemplaza tu_usuario por tu usario git y tu_repositorio con el valor de tu repositorio (en esta caso seria https://github.com/angvazcar/Ejercicio2.git)
+  Reemplaza tu_usuario por tu usario Git y tu_repositorio con el valor de tu repositorio (en esta caso seria https://github.com/angvazcar/Ejercicio2.git)
 
 2. Abrir el proyecto descargado con IntelliJ
 * * Abre IntelliJ IDEA
