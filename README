@@ -1,0 +1,74 @@
+# README - EJERCICIO 2 Proyecto de Automatización de una Web con Selenium
+
+## Descripción
+Este proyecto realiza una prueba automatizada en la que se busca el término "automatización" en Google y se accede al enlace de Wikipedia,
+extrayendo el primer año mencionado en la página. También se toma una captura de pantalla de la página de Wikipedia visitada que deja en el path del proyecto..
+
+## Requisitos Previos
+
+1. **Java**: Asegúrate de tener Java JDK 11 o superior instalado.
+   - Verifica la instalación ejecutando:
+     ```
+     java -version
+     ```
+2. **Maven**: Asegúrate de tener Apache Maven instalado (en nuestro caso hemos usado version 3.9.9).
+   - Verifica la instalación ejecutando:
+     ```
+     mvn -version
+     ```
+3. **Chrome y ChromeDriver**:
+   - Instala Google Chrome.Para ver la version instalada
+     ```
+     google-chrome --version
+     ```
+   - Instala ChromeDriver correspondiente a la versión de Chrome (en este caso hemos usado para nuestras pruebas la version 133).
+   Tanto la version de Chrome como la del ChromeDriver tienen que ser la misma. En este caso hemos usado 133
+     ```
+     chromedriver --version
+     ```
+   - Se usa WebDriverManager para automatizar la instalación de ChromeDriver y evitar pasos manuales.
+
+4. **Dependencias del Proyecto**:
+   - El proyecto utiliza Selenium y WebDriverManager. Hemos añadido la configuración al archivo `pom.xml`.
+
+## Instalación y Configuración
+
+1. Clona el repositorio o descarga los archivos del proyecto.
+  ```
+git clone https://github.com/tu_usuario/tu_repositorio.git
+  ```
+  Reemplaza tu_usuario por tu usario Git y tu_repositorio con el valor de tu repositorio (en esta caso seria https://github.com/angvazcar/Ejercicio2.git)
+
+2. Abrir el proyecto descargado con IntelliJ
+* * Abre IntelliJ IDEA
+* * En la pantalla de inicio, selecciona "Open" y navega hasta la carpeta donde clonaste el repositorio en el paso previo
+* * Espera a que IntelliJ detecte y configure automáticamente el proyecto.
+
+3. Ejecutar el proyecto desde IntelliJ
+* * Abre la clase RunCucumberTest ubicada en src/main/test/java/test
+* * Haz click derecho dentro del archivo y selecciona "Run 'RunCucumberTest.main()"
+* * IntelliJ compilará el código y ejecutará la prueba en el navegador controlado por Selenium
+
+5. Ejecutar el proyecto por comandos
+* * Abre iTerm o cmd y navega hasta la carpeta del proyecto
+  ```
+cd /ruta/del/proyecto
+  ```
+* * Compila el proyecto con Maven
+  ```
+mvn clean compile
+  ```
+* * Ejecuta la clase RunCucumberTest
+  ```
+mvn clean test
+  ```
+* * La prueba se ejecutará en el navegador y mostrará los resultados en el terminal
+
+6. Resultados
+Si la prueba se ejecuta correctamente estos son los resultados esperados:
+**********
+El primer proceso automático se realizó en el año: 67
+Captura de pantalla guardada en: /Users/angelesbuild38/Ejercicio2/wikipedia_screenshot.png
+**********
+
+
